@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'formation',
 ]
 
 MIDDLEWARE = [
@@ -84,9 +85,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'iimdjango', #nom de la db
-        'USER': 'maxime',
-        'PASSWORD': 'password',
+        'NAME': 'showcase_db',
+        'USER': 'amaurel',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -132,6 +133,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS =  [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
