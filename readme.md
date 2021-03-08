@@ -1,0 +1,3 @@
+#connect pg :
+
+ - `psql postgres`
