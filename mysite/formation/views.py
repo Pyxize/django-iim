@@ -7,9 +7,16 @@ def home(request):
     return render(request, 'home/home.html')
 
 
-def about(request):
-    return render(request, 'home/about.html')
+def articles(request):
+    return render(request, 'home/articles.html')
 
 
-def content(request):
-    return render(request, 'home/content.html')
+def members(request):
+    return render(request, 'home/members.html')
+
+
+def contact(request):
+    return render(request, 'home/contact.html')
+
+
+

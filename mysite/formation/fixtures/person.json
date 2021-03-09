@@ -1,0 +1,32 @@
+[
+    {
+        "model": "formation.person",
+        "pk": 1,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Lennon",
+            "role": "Dev",
+            "born_date": "1999-10-14"
+        }
+    },
+    {
+        "model": "formation.person",
+        "pk": 2,
+        "fields": {
+            "first_name": "Paul",
+            "last_name": "McCartney",
+            "role": "Dev",
+            "born_date": "1999-10-14"
+        }
+    },
+    {
+        "model": "formation.person",
+        "pk": 3,
+        "fields": {
+            "first_name": "Paul",
+            "last_name": "McCartney",
+            "role": "Dev",
+            "born_date": "1999-10-14"
+        }
+    }
+]
