@@ -16,13 +16,13 @@
 
                 <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start">
-                        <a href="/" class="navbar-item is-active">
+                        <a href="{% url 'home' %}" class="navbar-item is-active">
                             Home
                         </a>
-                        <a href="/members" class="navbar-item">
+                        <a href="{% url 'members' %}" class="navbar-item">
                             Members
                         </a>
-                        <a href="/contact" class="navbar-item">
+                        <a href="{% url 'contact' %}" class="navbar-item">
                             Contact
                         </a>
                     </div>

@@ -19,4 +19,6 @@ def contact(request):
     return render(request, 'home/contact.html')
 
 
-
+def article(request, article_id):
+    article = Article.objects.filter(id=article_id)
+    return render(request, 'home/article.html', {"article": article[0], id: article_id})

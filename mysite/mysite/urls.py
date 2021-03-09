@@ -18,8 +18,9 @@ from django.urls import path
 from formation import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.home),
-    path('members/', views.members),
-    path('contact/', views.contact),
+    path('admin/', admin.site.urls, name='admin'),
+    path('', views.home, name='home'),
+    path('members/', views.members, name='members'),
+    path('contact/', views.contact, name='contact'),
+    path('article/<int:article_id>/', views.article, name='article'),
 ]
