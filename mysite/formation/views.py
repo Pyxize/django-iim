@@ -1,14 +1,12 @@
 from django.shortcuts import render
+from .models import Article
 
 # Create your views here.
 
 
 def home(request):
-    return render(request, 'home/home.html')
-
-
-def articles(request):
-    return render(request, 'home/articles.html')
+    articles = Article.objects.all()
+    return render(request, 'home/articles.html', {'articles': articles})
 
 
 def members(request):

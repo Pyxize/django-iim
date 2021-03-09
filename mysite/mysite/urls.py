@@ -19,8 +19,7 @@ from formation import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.home),
-    path('articles/', views.articles),
+    path('', views.home),
     path('members/', views.members),
     path('contact/', views.contact),
 ]
