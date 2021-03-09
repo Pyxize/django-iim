@@ -15,9 +15,17 @@ class Person(models.Model):
         return '%s %s' % (self.first_name, self.last_name)
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=30)
+    parent = models.ForeignKey(
+        'self', blank=True,
+        null=True,
+        related_name='child',
+        on_delete=models.CASCADE
+    )
+
+
 class Article(models.Model):
     name = models.CharField(max_length=30)
     content = models.CharField(max_length=400)
-
-
-
+    category = models.ForeignKey('Category', null=True, on_delete=models.CASCADE)

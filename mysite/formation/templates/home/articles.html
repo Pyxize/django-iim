@@ -5,13 +5,13 @@
     <div class="column is-10 is-offset-1">
         <div class="columns is-multiline">
             {% for article in articles %}
-            <div class="column post is-4">
+            <div class="column post is-4 p-4">
                 <article class="columns is-multiline">
                   <div class="column is-12 post-img">
                     <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
                   </div>
                   <div class="column is-12 featured-content ">
-                    <h3 class="heading post-category">Category Name</h3>
+                    <h3 class="heading post-category">{{article.category.name}}</h3>
                     <h1 class="title post-title">{{article.name}}</h1>
                     <p class="post-excerpt">{{article.content}}</p>
                     <br>

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Article
+from .models import Person
 
 # Create your views here.
 
@@ -10,7 +11,8 @@ def home(request):
 
 
 def members(request):
-    return render(request, 'home/members.html')
+    members = Person.objects.all()
+    return render(request, 'home/members.html', {'members': members})
 
 
 def contact(request):

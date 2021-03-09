@@ -6,7 +6,7 @@
             "first_name": "John",
             "last_name": "Lennon",
             "role": "Dev",
-            "born_date": "1999-10-14"
+            "born_date": "1995-01-21"
         }
     },
     {
@@ -16,15 +16,15 @@
             "first_name": "Paul",
             "last_name": "McCartney",
             "role": "Dev",
-            "born_date": "1999-10-14"
+            "born_date": "1993-02-09"
         }
     },
     {
         "model": "formation.person",
         "pk": 3,
         "fields": {
-            "first_name": "Paul",
-            "last_name": "McCartney",
+            "first_name": "Jorge",
+            "last_name": "Court",
             "role": "Dev",
             "born_date": "1999-10-14"
         }
