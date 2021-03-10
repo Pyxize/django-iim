@@ -1,0 +1,35 @@
+[
+    {
+        "model": "showcase.person",
+        "pk": 1,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Lennon",
+            "role": "Dev",
+            "born_date": "1995-01-21",
+            "photo": "/images/p1.jpeg"
+        }
+    },
+    {
+        "model": "showcase.person",
+        "pk": 2,
+        "fields": {
+            "first_name": "Paul",
+            "last_name": "McCartney",
+            "role": "Dev",
+            "born_date": "1993-02-09",
+            "photo": "/images/p2.jpg"
+        }
+    },
+    {
+        "model": "showcase.person",
+        "pk": 3,
+        "fields": {
+            "first_name": "Jorge",
+            "last_name": "Court",
+            "role": "Dev",
+            "born_date": "1999-10-14",
+            "photo": "/images/Alberto_conversi_profile_pic.jpg"
+        }
+    }
+]
