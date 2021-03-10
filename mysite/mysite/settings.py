@@ -25,7 +25,7 @@ import django_heroku
 SECRET_KEY = 'w^hg*%601sp=d1z-)^*2q%4kxn3er!n1hbg8-f!fmt65#9!=ew'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['django-iim.herokuapp.com']
 
@@ -148,3 +148,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+# config pg
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
+}
