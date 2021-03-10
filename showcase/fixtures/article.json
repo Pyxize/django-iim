@@ -1,0 +1,62 @@
+[
+    {
+        "model": "showcase.article",
+        "pk": 1,
+        "fields": {
+            "name": "Article1",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 1,
+            "image": "/images/1.jpg"
+        }
+    },
+    {
+        "model": "showcase.article",
+        "pk": 2,
+        "fields": {
+            "name": "Article2",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 2,
+            "image": "/images/2.jpg"
+        }
+    },
+    {
+        "model": "showcase.article",
+        "pk": 3,
+        "fields": {
+            "name": "Article3",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 2,
+            "image": "/images/3.jpg"
+        }
+    },
+    {
+        "model": "showcase.article",
+        "pk": 4,
+        "fields": {
+            "name": "Article4",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 1,
+            "image": "/images/4.jpg"
+        }
+    },
+    {
+        "model": "showcase.article",
+        "pk": 5,
+        "fields": {
+            "name": "Article5",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 2,
+            "image": "/images/838_gettyimages-941329600.jpg"
+        }
+    },
+    {
+        "model": "showcase.article",
+        "pk": 6,
+        "fields": {
+            "name": "Article6",
+            "content": "Vexatus Tyrii denique autem Tyrii nomine sine diaconus praepositum quam quidam vexatus nihil vexatus nomine perurgebant manicis ministris idem Tyrii tortis haec fucandae Christiani est celerari quaerebatur indumentum sermone sine cuius appellant pectoralem vexatus usque cuius textrini ad non quaerebatur.",
+            "category": 2,
+            "image": "/images/shutterstock_1693011013-625x460.jpg"
+        }
+    }
+]

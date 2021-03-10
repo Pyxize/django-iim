@@ -1,0 +1,16 @@
+[
+    {
+        "model": "showcase.category",
+        "pk": 1,
+        "fields": {
+            "name": "Category1"
+        }
+    },
+    {
+        "model": "showcase.category",
+        "pk": 2,
+        "fields": {
+            "name": "Category2"
+        }
+    }
+]
