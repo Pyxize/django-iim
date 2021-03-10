@@ -5,7 +5,11 @@
     <div class="column is-10 is-offset-1">
         <article class="columns is-multiline">
             <div class="column is-12 post-img">
-                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image" />
+                {% if article.image %}
+                    <img src="{{ article.image.url }}" alt="Featured Image">
+                {% else %}
+                    <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                {% endif %}
             </div>
             <div class="column is-12 featured-content">
                 <h3 class="heading post-category">{{article.category.name}}</h3>

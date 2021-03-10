@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 
 # Create your models here.
 
@@ -8,6 +9,7 @@ class Person(models.Model):
     last_name = models.CharField(max_length=30)
     role = models.CharField(max_length=100)
     born_date = models.DateField()
+    photo = models.ImageField(upload_to='images', null=True)
 
     @property
     def full_name(self):
@@ -29,3 +31,11 @@ class Article(models.Model):
     name = models.CharField(max_length=30)
     content = models.CharField(max_length=400)
     category = models.ForeignKey('Category', null=True, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='images', null=True)
+
+
+class ContactForm(forms.Form):
+    first_name = forms.CharField(max_length=50)
+    last_name = forms.CharField(max_length=50)
+    email_address = forms.EmailField(max_length=150)
+    message = forms.CharField(widget=forms.Textarea, max_length=2000)
