@@ -1,1 +1,0 @@
-web: gunicorn formation.wsgi --log-file -
