@@ -28,16 +28,17 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             subject = 'Bulma R&D'
+            from_email = form.cleaned_data['email_address']
             body = {
                 'first_name': form.cleaned_data['first_name'],
                 'last_name': form.cleaned_data['last_name'],
-                'email': form.cleaned_data['email_address'],
+                'email_address': form.cleaned_data['email_address'],
                 'message': form.cleaned_data['message'],
             }
             message = "\n".join(body.values())
 
             try:
-                send_mail(subject, message, 'antoinemaurel6@gmail.com', ['antoinemaurel6@gmail.com'])
+                send_mail(subject, message, from_email, ['antoinemaurel6@gmail.com'])
                 messages.success(request, 'Form submission successful')
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')

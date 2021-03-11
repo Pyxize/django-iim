@@ -15,6 +15,9 @@ class Person(models.Model):
     def full_name(self):
         "Returns the person's full name."
         return '%s %s' % (self.first_name, self.last_name)
+    
+    def __str__(self):
+        return self.first_name
 
 
 class Category(models.Model):
@@ -26,6 +29,9 @@ class Category(models.Model):
         on_delete=models.CASCADE
     )
 
+    def __str__(self):
+        return self.name
+
 
 class Article(models.Model):
     name = models.CharField(max_length=30)
@@ -33,9 +39,13 @@ class Article(models.Model):
     category = models.ForeignKey('Category', null=True, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='images', null=True)
 
+    def __str__(self):
+        return self.name
+
 
 class ContactForm(forms.Form):
     first_name = forms.CharField(max_length=50)
     last_name = forms.CharField(max_length=50)
     email_address = forms.EmailField(max_length=150)
     message = forms.CharField(widget=forms.Textarea, max_length=2000)
+

@@ -15,18 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from showcase import views
-from django.conf import settings
-from django.conf.urls.static import static
-from showcase import views as cv_views
+from showcase import views as showcase_views
+from cv import views as cv_views
 
 urlpatterns = [
+    path('', cv_views.display_all, name='home'),
     path('admin/', admin.site.urls, name='admin'),
-    path('', views.home, name='home'),
-    path('members/', views.members, name='members'),
-    path('contact/', views.contact, name='contact'),
-    path('article/<int:article_id>/', views.article, name='article'),
-    # path('cv/', cv_views, name='cv'),
+    path('showcase/', showcase_views.home, name='showcase'),
+    path('showcase/members/', showcase_views.members, name='showcase.members'),
+    path('showcase/contact/', showcase_views.contact, name='showcase.contact'),
+    path('showcase/article/<int:article_id>/', showcase_views.article, name='showcase.article'),
+    path('cv/', cv_views.home, name='cv'),
+    path('cv/recruiters', cv_views.recruiters, name='cv.recruiters'),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
