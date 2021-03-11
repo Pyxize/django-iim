@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cv',
     'showcase',
+    'bulma',
 ]
 
 MIDDLEWARE = [
